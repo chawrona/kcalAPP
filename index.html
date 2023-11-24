@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/date.js" defer></script>
+    <title>Apka</title>
+</head>
+
+<body>
+    <header class="info">
+        <h1></h1>
+        <h2>Aktualne kalorie: <span id="today-calories">1754</span></h2>
+        <a href="statistics.html" class="statistics">Statystyki</a> 
+    </header>
+
+    <form action="">
+        <div class="add-meal">
+            <label for="meal-name">
+                Nazwa posiłku:
+                <input type="text" id="meal-name">
+            </label>
+            <label for="meal-kcal">
+                Kalorie:
+                <input type="number" min="0" max="2000" id="meal-kcal">
+            </label>
+            <button type="submit">Dodaj</button>
+        </div>
+
+        <div class="question">
+            <label for="add-ingredients">Czy chcesz dodać składniki?
+                <input type="checkbox" id="add-ingredients">
+            </label>
+        </div>
+
+        <div class="ingredients hidden">
+            <div class="ingredient">
+                <div class="ingredient-wrap">
+                    <h3>Składnik #1</h3>
+                </div>
+                <label for="ingredient-name-1">
+                    Nazwa składnika:
+                    <input type="text" class="name" id="ingredient-name-1">
+                </label>
+                <label for="ingredient-wage-1">
+                    Waga:
+                    <input type="number" min="0" max="1000" class="wage" id="ingredient-wage-1">
+                </label>
+                <label for="ingredient-kcal-1">
+                    Kalorie:
+                    <input type="number" min="0" max="1000" class="kcal" id="ingredient-kcal-1">
+                </label>
+            </div>
+
+            <div id="add-ingredient">
+                <img src="./src/button.png" alt="" class="add-ingredient_button">
+                <p>Więcej składników</p>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
