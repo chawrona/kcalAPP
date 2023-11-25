@@ -59,10 +59,22 @@ for (const [date, meals] of Object.entries(days)) {
 
     
 
-    if (dayKcals < 1800) yellowgreenCount++
-    else if (dayKcals < 2000 ) greenCount++
-    else if (dayKcals < 2100) orangeCount++
-    else redCount++
+    if (dayKcals < 1800) {
+        yellowgreenCount++
+        article.classList.add("yellowgreen")
+    }
+    else if (dayKcals < 2000 ) {
+        greenCount++
+        article.classList.add("green")
+    }
+    else if (dayKcals < 2100) {
+        orangeCount++;
+        article.classList.add("orange")
+    }
+    else {
+        redCount++
+        article.classList.add("red")
+    }
 
 }
 

@@ -1,0 +1,74 @@
+.statistics #yellowgreen {
+  color: rgb(22, 165, 9);
+}
+.statistics #green {
+  color: green;
+}
+.statistics #orange {
+  color: orange;
+}
+.statistics #red {
+  color: red;
+}
+
+.yellowgreen {
+  border: 2px solid rgba(72, 105, 8, 0.483);
+}
+.yellowgreen .day-header,
+.yellowgreen .meal-header,
+.yellowgreen .meal-ingredient {
+  background-color: rgba(173, 227, 65, 0.283);
+}
+.yellowgreen .day-header {
+  background-color: rgba(173, 227, 65, 0.657);
+}
+.yellowgreen .meal p {
+  color: rgb(7, 106, 7);
+}
+
+.green {
+  border: 2px solid rgba(6, 84, 9, 0.483);
+}
+.green .day-header,
+.green .meal-header,
+.green .meal-ingredient {
+  background-color: rgba(73, 197, 54, 0.283);
+}
+.green .day-header {
+  background-color: rgba(71, 203, 57, 0.657);
+}
+.green .meal p {
+  color: rgb(9, 91, 5);
+}
+
+.orange {
+  border: 2px solid rgba(128, 72, 9, 0.483);
+}
+.orange .day-header,
+.orange .meal-header,
+.orange .meal-ingredient {
+  background-color: rgba(225, 161, 41, 0.283);
+}
+.orange .day-header {
+  background-color: rgba(231, 164, 41, 0.657);
+}
+.orange .meal p {
+  color: rgb(106, 58, 7);
+}
+
+.red {
+  border: 2px solid rgba(105, 8, 8, 0.483);
+}
+.red .day-header,
+.red .meal-header,
+.red .meal-ingredient {
+  background-color: rgba(227, 65, 65, 0.283);
+}
+.red .day-header {
+  background-color: rgba(227, 65, 65, 0.657);
+}
+.red .meal p {
+  color: rgb(106, 7, 7);
+}
+
+/*# sourceMappingURL=colors.css.map */

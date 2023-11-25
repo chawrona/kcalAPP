@@ -60,18 +60,6 @@ button:hover {
   margin-top: 2rem;
   font-size: 2.8rem;
 }
-.statistics #yellowgreen {
-  color: rgb(22, 165, 9);
-}
-.statistics #green {
-  color: green;
-}
-.statistics #orange {
-  color: orange;
-}
-.statistics #red {
-  color: red;
-}
 
 nav {
   display: flex;
@@ -110,7 +98,6 @@ h3 {
   background-color: #fff;
   overflow: hidden;
   flex-shrink: 0;
-  border: 2px solid rgba(105, 8, 8, 0.483);
   color: black;
 }
 
@@ -120,14 +107,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(227, 65, 65, 0.283);
   padding: 0.7rem 1rem;
 }
 
 .day-header {
   padding: 1rem;
   font-weight: bold;
-  background-color: rgba(227, 65, 65, 0.657);
 }
 .day-header .day-calories {
   font-size: 1.6rem;
@@ -138,9 +123,6 @@ h3 {
 }
 .meal-ingredient {
   background-color: white;
-}
-.meal p {
-  color: rgb(106, 7, 7);
 }
 
 /*# sourceMappingURL=statistics.css.map */
