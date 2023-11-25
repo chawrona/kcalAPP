@@ -81,12 +81,13 @@ nav {
 }
 
 main {
-  max-width: 100%;
   display: flex;
-  padding-bottom: 3rem;
-  flex-direction: row-reverse;
-  transform: translateX(calc(-50% + 150px));
+  flex-direction: row;
+  max-width: 100%;
   margin-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 75px;
+  transform: translateX(calc(-50% + 150px));
   gap: 2rem;
   overflow-x: scroll;
 }
@@ -102,10 +103,11 @@ h3 {
 }
 
 .day {
-  min-width: 300px;
+  width: 300px;
   border-radius: 1rem;
   background-color: #fff;
   overflow: hidden;
+  flex-shrink: 0;
   border: 2px solid rgba(72, 105, 8, 0.483);
   color: black;
 }

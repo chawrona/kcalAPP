@@ -70,3 +70,5 @@ yellowgreen.innerText = yellowgreenCount
 green.innerText = greenCount
 orange.innerText = orangeCount
 red.innerText = redCount
+
+main.scrollLeft = main.offsetWidth;
