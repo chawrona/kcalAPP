@@ -83,6 +83,7 @@ nav {
 main {
   display: flex;
   flex-direction: row;
+  align-items: start;
   max-width: 100%;
   margin-top: 2rem;
   padding-bottom: 3rem;
@@ -105,10 +106,11 @@ h3 {
 .day {
   width: 300px;
   border-radius: 1rem;
+  padding-bottom: 0;
   background-color: #fff;
   overflow: hidden;
   flex-shrink: 0;
-  border: 2px solid rgba(72, 105, 8, 0.483);
+  border: 2px solid rgba(105, 8, 8, 0.483);
   color: black;
 }
 
@@ -118,14 +120,14 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(173, 227, 65, 0.283);
+  background-color: rgba(227, 65, 65, 0.283);
   padding: 0.7rem 1rem;
 }
 
 .day-header {
   padding: 1rem;
   font-weight: bold;
-  background-color: rgba(173, 227, 65, 0.657);
+  background-color: rgba(227, 65, 65, 0.657);
 }
 .day-header .day-calories {
   font-size: 1.6rem;
@@ -138,7 +140,7 @@ h3 {
   background-color: white;
 }
 .meal p {
-  color: rgb(7, 106, 7);
+  color: rgb(106, 7, 7);
 }
 
 /*# sourceMappingURL=statistics.css.map */
