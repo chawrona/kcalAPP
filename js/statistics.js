@@ -57,17 +57,15 @@ for (const [date, meals] of Object.entries(days)) {
             ${mealSections}
     `
 
-    
-
-    if (dayKcals < 1800) {
+    if (dayKcals <= 1800) {
         yellowgreenCount++
         article.classList.add("yellowgreen")
     }
-    else if (dayKcals < 2000 ) {
+    else if (dayKcals <= 2000 ) {
         greenCount++
         article.classList.add("green")
     }
-    else if (dayKcals < 2100) {
+    else if (dayKcals <= 2100) {
         orangeCount++;
         article.classList.add("orange")
     }
