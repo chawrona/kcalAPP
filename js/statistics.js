@@ -4,8 +4,9 @@ const yellowgreen = document.querySelector("#yellowgreen")
 const green = document.querySelector("#green")
 const orange = document.querySelector("#orange")
 const red = document.querySelector("#red")
+const avg = document.querySelector(".average")
 let yellowgreenCount = 0, greenCount = 0, orangeCount = 0, redCount = 0;
-
+let average = 0, averageCount = 0;
 // {
 //     name: mealName,
 //     kcal: mealKcal,
@@ -14,7 +15,7 @@ let yellowgreenCount = 0, greenCount = 0, orangeCount = 0, redCount = 0;
 //     date: new Date().toDateString()
 // }
 
-console.log(days);
+
 for (const [date, meals] of Object.entries(days)) {
     console.log(date, meals);
     let dayKcals = 0
@@ -74,8 +75,12 @@ for (const [date, meals] of Object.entries(days)) {
         article.classList.add("red")
     }
 
+    average += dayKcals;
+    averageCount++;
 }
 
+
+avg.innerText = `Średnia: ${average / averageCount}`
 yellowgreen.innerText = yellowgreenCount
 green.innerText = greenCount
 orange.innerText = orangeCount
