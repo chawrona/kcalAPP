@@ -80,7 +80,7 @@ for (const [date, meals] of Object.entries(days)) {
 }
 
 
-avg.innerText = `Średnia: ${average / averageCount}`
+avg.innerText = `Średnia: ${!average ? "0" : average / averageCount}`
 yellowgreen.innerText = yellowgreenCount
 green.innerText = greenCount
 orange.innerText = orangeCount
