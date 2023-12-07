@@ -36,11 +36,20 @@ function saveToLocalStorage() {
 }
 
 function getDate(date) {
+    const hours = date.getHours();
+
+    if (hours >= 0 && hours < 6) {
+        date.setDate(new Date(date).getDate() - 1);
+    }
+
     const day = String(date.getDate()).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const year = date.getFullYear();
+    
     return  `${day}.${month}.${year}`;
 }
+
+
 if (meals[getDate(new Date())]) meals[getDate(new Date())].forEach(meal => {updateCalories(meal.kcal)})
 
 updateCalories()
