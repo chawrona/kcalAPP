@@ -57,22 +57,20 @@ for (const [date, meals] of Object.entries(days)) {
             </header>
             ${mealSections}
     `
-
-    if (dayKcals <= 1800) {
-        yellowgreenCount++
-        article.classList.add("yellowgreen")
-    }
-    else if (dayKcals <= 2000 ) {
+    if (todayCalories < 2025  || todayCalories > 2175) {
         greenCount++
         article.classList.add("green")
     }
-    else if (dayKcals <= 2100) {
+    else if (todayCalories < 1975  || todayCalories > 2215) {
         orangeCount++;
         article.classList.add("orange")
     }
-    else {
+    else if(todayCalories < 1900 || todayCalories > 2300) {
         redCount++
         article.classList.add("red")
+    } else {
+        yellowgreenCount++
+        article.classList.add("yellowgreen")
     }
 
     average += dayKcals;
