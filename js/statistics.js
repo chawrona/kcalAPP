@@ -57,17 +57,15 @@ for (const [date, meals] of Object.entries(days)) {
             </header>
             ${mealSections}
     `
-    if (dayKcals < 2025  || dayKcals > 2175) {
-        greenCount++
-        article.classList.add("green")
-    }
-    else if (dayKcals < 1975  || dayKcals > 2215) {
-        orangeCount++;
-        article.classList.add("orange")
-    }
-    else if(dayKcals < 1900 || dayKcals > 2300) {
+    if (dayKcals < 1900 || dayKcals > 2300) {
         redCount++
         article.classList.add("red")
+    } else if (dayKcals < 1975  || dayKcals > 2215) {
+        orangeCount++;
+        article.classList.add("orange")
+    } else if (dayKcals < 2025  || dayKcals > 2175) {
+        greenCount++
+        article.classList.add("green")
     } else {
         yellowgreenCount++
         article.classList.add("yellowgreen")
