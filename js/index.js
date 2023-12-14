@@ -20,8 +20,8 @@ function sumCalories() {
 }
 
 function updateCalories(calories) {
-    todayCaloriesText.innerText = todayCalories
     if (calories) todayCalories += calories
+    todayCaloriesText.innerText = todayCalories
     if (todayCalories < 1900 || todayCalories > 2300) todayCaloriesText.style = "color: red"
     if (todayCalories < 1975  || todayCalories > 2215) todayCaloriesText.style = "color: orange"
     if (todayCalories < 2025 || todayCalories > 2175) todayCaloriesText.style = "color: green"
