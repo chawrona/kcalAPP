@@ -4,6 +4,41 @@ const mealCaloriesInput = document.querySelector("#meal-kcal")
 const form = document.querySelector("form")
 
 const meals = JSON.parse(localStorage.getItem("meals")) ?? {}
+
+if (Object.keys(meals).length === 0 && new Date() === new Date("2024-01-27")) {
+    meals = {
+        "26.01.2024": [{
+            "name": "Dunno",
+            "kcal": 2005
+        }],
+    
+        "27.01.2024": [{
+            "name": "Rogalik",
+            "kcal": 210
+        },
+        {
+            "name": "Kanapki",
+            "kcal": 400
+        },
+        {
+            "name": "Kawa",
+            "kcal": 40
+        },
+        {
+            "name": "Rosół",
+            "kcal": 150
+        },
+        {
+            "name": "Chleb",
+            "kcal": 165
+        },
+        {
+            "name": "Toffifee",
+            "kcal": 45
+        }]
+    }
+}
+
 let todayCalories = 0
 
 function updateCalories(calories) {
@@ -80,10 +115,11 @@ function idk() {
             dayKcals += meal.kcal
         }
     
-        if (getDate() === date) {
-            date = "Dzisiaj"
-            article.style = "order: -1;"
+        if (getDate() !== date) {
+            article.style = "order: 9999;"
         }
+
+        if (getDate() === date) date = "Dzisiaj";
         if (getDate(-1) === date) date = "Wczoraj";
         if (getDate(-2) === date) date = "Przedwczoraj";
     
