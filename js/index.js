@@ -4,40 +4,6 @@ const mealCaloriesInput = document.querySelector("#meal-kcal")
 const form = document.querySelector("form")
 
 let meals = JSON.parse(localStorage.getItem("meals")) ?? {}
-console.log(Object.keys(meals).length === 0);
-if (Object.keys(meals).length === 0) {
-    meals = {
-        "26.01.2024": [{
-            "name": "Dunno",
-            "kcal": 2005
-        }],
-    
-        "27.01.2024": [{
-            "name": "Rogalik",
-            "kcal": 210
-        },
-        {
-            "name": "Kanapki",
-            "kcal": 400
-        },
-        {
-            "name": "Kawa",
-            "kcal": 40
-        },
-        {
-            "name": "Rosół",
-            "kcal": 150
-        },
-        {
-            "name": "Chleb",
-            "kcal": 165
-        },
-        {
-            "name": "Toffifee",
-            "kcal": 45
-        }]
-    }
-}
 
 let todayCalories = 0
 
