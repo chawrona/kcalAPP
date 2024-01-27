@@ -5,7 +5,7 @@ const form = document.querySelector("form")
 
 const meals = JSON.parse(localStorage.getItem("meals")) ?? {}
 
-if (Object.keys(meals).length === 0 && new Date() === new Date("2024-01-27")) {
+if (Object.keys(meals).length === 0) {
     meals = {
         "26.01.2024": [{
             "name": "Dunno",
