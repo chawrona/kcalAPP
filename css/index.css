@@ -191,6 +191,7 @@ label:has([disabled]) {
   border-radius: 0.35em;
   margin-top: 2rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1176470588);
+  margin-bottom: 1rem;
 }
 
 .header {
