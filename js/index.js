@@ -3,7 +3,7 @@ const todayCaloriesText = document.querySelector("#today-calories")
 const mealCaloriesInput = document.querySelector("#meal-kcal")
 const form = document.querySelector("form")
 
-const meals = JSON.parse(localStorage.getItem("meals")) ?? {}
+let meals = JSON.parse(localStorage.getItem("meals")) ?? {}
 console.log(Object.keys(meals).length === 0);
 if (Object.keys(meals).length === 0) {
     meals = {
