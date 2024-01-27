@@ -80,11 +80,14 @@ function idk() {
             dayKcals += meal.kcal
         }
     
-        if (getDate() === date) date = "Dzisiaj"
+        if (getDate() === date) {
+            date = "Dzisiaj"
+            article.style = "order: -1;"
+        }
         if (getDate(-1) === date) date = "Wczoraj";
         if (getDate(-2) === date) date = "Przedwczoraj";
     
-    
+       
         article.innerHTML = `
                 <span>${date}</span>
                 <span>${dayKcals} kcal</span>
