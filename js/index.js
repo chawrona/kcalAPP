@@ -129,23 +129,21 @@ h1Element.addEventListener('click', () => {
   
   if (currentTime - lastClickTime < 1000) {
     clickCount++;
-
-    if (clickCount === 3) {
-      let d = prompt(`Dzień ${getDate()}`);
-      let k = prompt('Kalorie');
-      if (d) {
-        const today = getDate()
-        if (meals[today] === undefined) meals[today] = []
-        meals[today].push({
-          name: d,
-          kcal: k,
-        });
-      }
-      
-      
-      clickCount = 0;
-    }
+    if (clickCount === 3) funkcja()
   } else clickCount = 1;
 
   lastClickTime = currentTime;
 });
+
+function funkcja() {
+    let d = prompt(`Dzień ${getDate()}`);
+    let k = Number(prompt('Kalorie'));
+    meals[d] = [] 
+      meals[d].push({
+        name: d,
+        kcal: k,
+      });   
+    clickCount = 0;
+    saveToLocalStorage()
+    idk()   
+}
