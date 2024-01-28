@@ -119,3 +119,33 @@ function idk() {
 }
 
 idk()
+
+let h1Element = document.querySelector('h1');
+let clickCount = 0;
+let lastClickTime = 0;
+
+h1Element.addEventListener('click', () => {
+  let currentTime = new Date().getTime();
+  
+  if (currentTime - lastClickTime < 1000) {
+    clickCount++;
+
+    if (clickCount === 3) {
+      let d = prompt(`Dzień ${getDate()}`);
+      let k = prompt('Kalorie');
+      if (d) {
+        const today = getDate()
+        if (meals[today] === undefined) meals[today] = []
+        meals[today].push({
+          name: d,
+          kcal: k,
+        });
+      }
+      
+      
+      clickCount = 0;
+    }
+  } else clickCount = 1;
+
+  lastClickTime = currentTime;
+});
